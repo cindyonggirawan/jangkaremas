@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jangkar Emas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans text-[#242E49]">
+    <!-- Hero Section -->
+    <section
+      class="relative flex min-h-screen flex-col justify-between bg-cover bg-center text-white"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1676557059206-38b9764db28f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070');
+      "
+    >
+      <!-- Navbar -->
+      <header
+        class="relative z-10 flex items-center justify-between px-6 py-6 md:px-16"
+      >
+        <h1 class="text-lg font-medium tracking-wide text-[#242E49]">
+          Jangkar Emas
+        </h1>
+        <nav class="hidden space-x-10 text-sm text-[#242E49] md:flex">
+          <a href="/home.html" class="hover:text-[#1b2238]">Home</a>
+          <a href="/catalog.html" class="hover:text-[#1b2238]">Catalog</a>
+          <a href="/home.html#contactus" class="hover:text-[#1b2238]"
+            >Contact</a
+          >
+        </nav>
+        <div class="md:hidden">
+          <button class="text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 flex flex-col justify-center px-6 text-center md:px-16"
+      >
+        <h1
+          class="mb-12 sm:mb-24 text-5xl font-extrabold tracking-wide text-[#1E293B] uppercase sm:text-6xl lg:text-7xl"
+        >
+          FISH CATALOG
+        </h1>
+        <p
+          class="mx-auto mb-8 w-1/3 text-lg leading-relaxed font-medium text-[#FEF8E8] sm:text-xl lg:text-2xl"
+        >
+          From Sorong’s shores to dining tables worldwide, Jangkar Emas is proud
+          to present our full range of products.
+        </p>
+        <div
+          class="mx-auto mb-12 grid w-1/2 grid-cols-3 gap-6 text-sm text-[#FEF8E8] uppercase sm:text-base"
+        >
+          <p>TASTE.</p>
+          <p>LOCAL.</p>
+          <p>QUALITY.</p>
+        </div>
+
+        <!-- Info Box -->
+        <div class="mx-auto flex flex-col backdrop-blur-sm">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="186"
+            height="96"
+            viewBox="0 0 373 193"
+            fill="none"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="371"
+              height="191"
+              stroke="#FEF8E8"
+              stroke-width="2"
+            />
+            <path
+              d="M32.64 57.32C30.4 57.32 28.64 56.6907 27.36 55.432C26.08 54.1733 25.44 52.456 25.44 50.28H28.32C28.32 51.7093 28.6933 52.8187 29.44 53.608C30.208 54.376 31.2747 54.76 32.64 54.76C34.0053 54.76 35.0613 54.376 35.808 53.608C36.576 52.8187 36.96 51.7093 36.96 50.28V36.264H31.36V33.64H39.84V50.28C39.84 52.456 39.1893 54.1733 37.888 55.432C36.608 56.6907 34.8587 57.32 32.64 57.32ZM51.2515 57.32C49.3955 57.32 47.9342 56.8507 46.8675 55.912C45.8008 54.952 45.2675 53.6613 45.2675 52.04C45.2675 50.3973 45.8008 49.1067 46.8675 48.168C47.9342 47.2293 49.3742 46.76 51.1875 46.76H56.6275V45C56.6275 43.912 56.2968 43.08 55.6355 42.504C54.9955 41.9067 54.0782 41.608 52.8835 41.608C51.8382 41.608 50.9635 41.832 50.2595 42.28C49.5555 42.7067 49.1502 43.2933 49.0435 44.04H46.1635C46.3555 42.5253 47.0702 41.32 48.3075 40.424C49.5448 39.528 51.0915 39.08 52.9475 39.08C54.9742 39.08 56.5742 39.6027 57.7475 40.648C58.9208 41.6933 59.5075 43.112 59.5075 44.904V57H56.6915V53.64H56.2115L56.6915 53.16C56.6915 54.44 56.1902 55.4533 55.1875 56.2C54.2062 56.9467 52.8942 57.32 51.2515 57.32ZM51.9555 55.048C53.3208 55.048 54.4408 54.7067 55.3155 54.024C56.1902 53.3413 56.6275 52.4667 56.6275 51.4V48.904H51.2515C50.2915 48.904 49.5342 49.1707 48.9795 49.704C48.4248 50.2373 48.1475 50.9627 48.1475 51.88C48.1475 52.8613 48.4782 53.64 49.1395 54.216C49.8222 54.7707 50.7608 55.048 51.9555 55.048ZM65.319 57V39.4H68.199V42.76H68.807L68.199 43.432C68.199 42.0453 68.615 40.9787 69.447 40.232C70.279 39.464 71.431 39.08 72.903 39.08C74.6737 39.08 76.0817 39.624 77.127 40.712C78.1723 41.8 78.695 43.2827 78.695 45.16V57H75.815V45.48C75.815 44.2213 75.4737 43.2613 74.791 42.6C74.1297 41.9173 73.223 41.576 72.071 41.576C70.8763 41.576 69.927 41.9387 69.223 42.664C68.5403 43.3893 68.199 44.4347 68.199 45.8V57H65.319ZM86.7145 62.76V60.136H92.3145C93.2105 60.136 93.8612 59.9333 94.2665 59.528C94.6932 59.1227 94.9065 58.4933 94.9065 57.64V55.4L94.9705 52.2H94.3945L94.9385 51.72C94.9385 53 94.5118 54.0133 93.6585 54.76C92.8052 55.5067 91.6638 55.88 90.2345 55.88C88.4212 55.88 86.9918 55.2933 85.9465 54.12C84.9012 52.9253 84.3785 51.3253 84.3785 49.32V45.608C84.3785 43.6027 84.9012 42.0133 85.9465 40.84C86.9918 39.6667 88.4212 39.08 90.2345 39.08C91.6638 39.08 92.8052 39.4533 93.6585 40.2C94.5118 40.9467 94.9385 41.96 94.9385 43.24L94.3945 42.76H94.9385V39.4H97.7865V57.64C97.7865 59.2187 97.2958 60.4667 96.3145 61.384C95.3545 62.3013 94.0105 62.76 92.2825 62.76H86.7145ZM91.0985 53.384C92.2932 53.384 93.2318 53.0107 93.9145 52.264C94.5972 51.5173 94.9385 50.4827 94.9385 49.16V45.8C94.9385 44.4773 94.5972 43.4427 93.9145 42.696C93.2318 41.9493 92.2932 41.576 91.0985 41.576C89.8825 41.576 88.9332 41.9387 88.2505 42.664C87.5892 43.3893 87.2585 44.4347 87.2585 45.8V49.16C87.2585 50.5253 87.5892 51.5707 88.2505 52.296C88.9332 53.0213 89.8825 53.384 91.0985 53.384ZM103.79 57V33.64H106.67V46.664H110.062L115.182 39.4H118.478L112.558 47.784L118.574 57H115.214L110.094 49.16H106.67V57H103.79ZM128.002 57.32C126.146 57.32 124.684 56.8507 123.618 55.912C122.551 54.952 122.018 53.6613 122.018 52.04C122.018 50.3973 122.551 49.1067 123.618 48.168C124.684 47.2293 126.124 46.76 127.938 46.76H133.378V45C133.378 43.912 133.047 43.08 132.386 42.504C131.746 41.9067 130.828 41.608 129.634 41.608C128.588 41.608 127.714 41.832 127.01 42.28C126.306 42.7067 125.9 43.2933 125.794 44.04H122.914C123.106 42.5253 123.82 41.32 125.058 40.424C126.295 39.528 127.842 39.08 129.698 39.08C131.724 39.08 133.324 39.6027 134.498 40.648C135.671 41.6933 136.258 43.112 136.258 44.904V57H133.442V53.64H132.962L133.442 53.16C133.442 54.44 132.94 55.4533 131.938 56.2C130.956 56.9467 129.644 57.32 128.002 57.32ZM128.706 55.048C130.071 55.048 131.191 54.7067 132.066 54.024C132.94 53.3413 133.378 52.4667 133.378 51.4V48.904H128.002C127.042 48.904 126.284 49.1707 125.73 49.704C125.175 50.2373 124.898 50.9627 124.898 51.88C124.898 52.8613 125.228 53.64 125.89 54.216C126.572 54.7707 127.511 55.048 128.706 55.048ZM142.677 57V39.4H145.493V42.76H146.165L145.237 44.84C145.237 42.9413 145.642 41.512 146.453 40.552C147.285 39.5707 148.512 39.08 150.133 39.08C151.989 39.08 153.461 39.6667 154.549 40.84C155.658 41.992 156.213 43.56 156.213 45.544V46.6H153.333V45.8C153.333 44.4133 152.992 43.3573 152.309 42.632C151.648 41.8853 150.698 41.512 149.461 41.512C148.245 41.512 147.285 41.8853 146.581 42.632C145.898 43.3787 145.557 44.4347 145.557 45.8V57H142.677ZM180.7 57V33.64H194.14V36.264H183.548V43.496H193.02V46.088H183.548V54.376H194.14V57H180.7ZM198.799 57V39.4H201.328V41.512H201.904L201.456 42.28C201.456 41.2987 201.712 40.52 202.224 39.944C202.757 39.368 203.472 39.08 204.368 39.08C205.349 39.08 206.106 39.4427 206.64 40.168C207.173 40.8933 207.44 41.9173 207.44 43.24L206.576 41.512H207.92L207.312 42.28C207.312 41.2987 207.578 40.52 208.112 39.944C208.666 39.368 209.392 39.08 210.288 39.08C211.397 39.08 212.25 39.496 212.847 40.328C213.466 41.16 213.776 42.2587 213.776 43.624V57H211.12V43.592C211.12 42.8667 210.96 42.3013 210.64 41.896C210.341 41.4907 209.893 41.288 209.296 41.288C208.72 41.288 208.261 41.4907 207.92 41.896C207.6 42.28 207.44 42.8347 207.44 43.56V57H205.135V43.592C205.135 42.8453 204.965 42.28 204.624 41.896C204.304 41.4907 203.845 41.288 203.248 41.288C202.65 41.288 202.202 41.4907 201.904 41.896C201.605 42.28 201.456 42.8347 201.456 43.56V57H198.799ZM223.939 57.32C222.083 57.32 220.622 56.8507 219.555 55.912C218.488 54.952 217.955 53.6613 217.955 52.04C217.955 50.3973 218.488 49.1067 219.555 48.168C220.622 47.2293 222.062 46.76 223.875 46.76H229.315V45C229.315 43.912 228.984 43.08 228.323 42.504C227.683 41.9067 226.766 41.608 225.571 41.608C224.526 41.608 223.651 41.832 222.947 42.28C222.243 42.7067 221.838 43.2933 221.731 44.04H218.851C219.043 42.5253 219.758 41.32 220.995 40.424C222.232 39.528 223.779 39.08 225.635 39.08C227.662 39.08 229.262 39.6027 230.435 40.648C231.608 41.6933 232.195 43.112 232.195 44.904V57H229.379V53.64H228.899L229.379 53.16C229.379 54.44 228.878 55.4533 227.875 56.2C226.894 56.9467 225.582 57.32 223.939 57.32ZM224.643 55.048C226.008 55.048 227.128 54.7067 228.003 54.024C228.878 53.3413 229.315 52.4667 229.315 51.4V48.904H223.939C222.979 48.904 222.222 49.1707 221.667 49.704C221.112 50.2373 220.835 50.9627 220.835 51.88C220.835 52.8613 221.166 53.64 221.827 54.216C222.51 54.7707 223.448 55.048 224.643 55.048ZM244.119 57.256C242.924 57.256 241.879 57.0747 240.983 56.712C240.108 56.328 239.404 55.7947 238.871 55.112C238.359 54.4293 238.049 53.6187 237.943 52.68H240.823C240.951 53.2987 241.292 53.7893 241.847 54.152C242.423 54.5147 243.18 54.696 244.119 54.696H245.463C246.593 54.696 247.436 54.472 247.991 54.024C248.545 53.5547 248.823 52.936 248.823 52.168C248.823 51.4213 248.567 50.8347 248.055 50.408C247.564 49.96 246.828 49.6613 245.847 49.512L243.479 49.128C241.751 48.8293 240.46 48.296 239.607 47.528C238.775 46.7387 238.359 45.5973 238.359 44.104C238.359 42.5253 238.86 41.3093 239.863 40.456C240.865 39.5813 242.369 39.144 244.375 39.144H245.591C247.276 39.144 248.631 39.5387 249.655 40.328C250.679 41.1173 251.297 42.184 251.51 43.528H248.631C248.503 42.9733 248.183 42.536 247.671 42.216C247.159 41.8747 246.465 41.704 245.591 41.704H244.375C243.287 41.704 242.487 41.9067 241.975 42.312C241.484 42.7173 241.239 43.3253 241.239 44.136C241.239 44.8613 241.452 45.3947 241.879 45.736C242.305 46.0773 242.977 46.3227 243.895 46.472L246.263 46.856C248.161 47.1547 249.537 47.7093 250.391 48.52C251.265 49.3307 251.703 50.504 251.703 52.04C251.703 53.6613 251.18 54.9413 250.135 55.88C249.111 56.7973 247.553 57.256 245.463 57.256H244.119Z"
+              fill="#FEF8E8"
+            />
+            <path
+              d="M39.9545 103.545V121H37.9091L28.3977 107.295H28.2273V121H26.1136V103.545H28.1591L37.7045 117.284H37.875V103.545H39.9545ZM49.2294 121.273C48.0476 121.273 47.0107 120.991 46.1186 120.429C45.2322 119.866 44.5391 119.08 44.0391 118.068C43.5447 117.057 43.2976 115.875 43.2976 114.523C43.2976 113.159 43.5447 111.969 44.0391 110.952C44.5391 109.935 45.2322 109.145 46.1186 108.582C47.0107 108.02 48.0476 107.739 49.2294 107.739C50.4112 107.739 51.4453 108.02 52.3317 108.582C53.2237 109.145 53.9169 109.935 54.4112 110.952C54.9112 111.969 55.1612 113.159 55.1612 114.523C55.1612 115.875 54.9112 117.057 54.4112 118.068C53.9169 119.08 53.2237 119.866 52.3317 120.429C51.4453 120.991 50.4112 121.273 49.2294 121.273ZM49.2294 119.466C50.1271 119.466 50.8658 119.236 51.4453 118.776C52.0249 118.315 52.4538 117.71 52.7322 116.96C53.0107 116.21 53.1499 115.398 53.1499 114.523C53.1499 113.648 53.0107 112.832 52.7322 112.077C52.4538 111.321 52.0249 110.71 51.4453 110.244C50.8658 109.778 50.1271 109.545 49.2294 109.545C48.3317 109.545 47.593 109.778 47.0135 110.244C46.4339 110.71 46.005 111.321 45.7266 112.077C45.4482 112.832 45.3089 113.648 45.3089 114.523C45.3089 115.398 45.4482 116.21 45.7266 116.96C46.005 117.71 46.4339 118.315 47.0135 118.776C47.593 119.236 48.3317 119.466 49.2294 119.466ZM59.6974 121.136C59.277 121.136 58.9162 120.986 58.6151 120.685C58.3139 120.384 58.1634 120.023 58.1634 119.602C58.1634 119.182 58.3139 118.821 58.6151 118.52C58.9162 118.219 59.277 118.068 59.6974 118.068C60.1179 118.068 60.4787 118.219 60.7798 118.52C61.081 118.821 61.2315 119.182 61.2315 119.602C61.2315 119.881 61.1605 120.136 61.0185 120.369C60.8821 120.602 60.6974 120.79 60.4645 120.932C60.2372 121.068 59.9815 121.136 59.6974 121.136ZM77.6932 103.545V121H75.5795V105.761H75.4773L71.2159 108.591V106.443L75.5795 103.545H77.6932Z"
+              fill="#FEF8E8"
+            />
+            <rect
+              x="24"
+              y="135"
+              width="325"
+              height="34"
+              fill="url(#pattern0_180_2)"
+            />
+            <defs>
+              <pattern
+                id="pattern0_180_2"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_180_2"
+                  transform="matrix(0.00117545 0 0 0.011236 -0.000743302 0)"
+                />
+              </pattern>
+              <image
+                id="image0_180_2"
+                width="852"
+                height="89"
+                preserveAspectRatio="none"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA1QAAABZCAYAAAA5F2UeAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADVGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4KPHg6eG1wbWV0YSB4bWxuczp4PSdhZG9iZTpuczptZXRhLyc+CjxyZGY6UkRGIHhtbG5zOnJkZj0naHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyc+CgogPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9JycKICB4bWxuczpBdHRyaWI9J2h0dHA6Ly9ucy5hdHRyaWJ1dGlvbi5jb20vYWRzLzEuMC8nPgogIDxBdHRyaWI6QWRzPgogICA8cmRmOlNlcT4KICAgIDxyZGY6bGkgcmRmOnBhcnNlVHlwZT0nUmVzb3VyY2UnPgogICAgIDxBdHRyaWI6Q3JlYXRlZD4yMDI1LTA4LTMxPC9BdHRyaWI6Q3JlYXRlZD4KICAgICA8QXR0cmliOkV4dElkPjUyZGVkMjNiLTAxMzUtNGMxMC05YWM5LTgxNDBhOThkNzNjNTwvQXR0cmliOkV4dElkPgogICAgIDxBdHRyaWI6RmJJZD41MjUyNjU5MTQxNzk1ODA8L0F0dHJpYjpGYklkPgogICAgIDxBdHRyaWI6VG91Y2hUeXBlPjI8L0F0dHJpYjpUb3VjaFR5cGU+CiAgICA8L3JkZjpsaT4KICAgPC9yZGY6U2VxPgogIDwvQXR0cmliOkFkcz4KIDwvcmRmOkRlc2NyaXB0aW9uPgoKIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PScnCiAgeG1sbnM6ZGM9J2h0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvJz4KICA8ZGM6dGl0bGU+CiAgIDxyZGY6QWx0PgogICAgPHJkZjpsaSB4bWw6bGFuZz0neC1kZWZhdWx0Jz4oMSkgLSAxPC9yZGY6bGk+CiAgIDwvcmRmOkFsdD4KICA8L2RjOnRpdGxlPgogPC9yZGY6RGVzY3JpcHRpb24+CjwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBh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"
+              />
+            </defs>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bottom Padding -->
+      <div class="pb-8 md:pb-12"></div>
+    </section>
+
+    <!-- DISCOVER OUR CATALOGS -->
+    <section
+      id="discoverourcatalogs"
+      class="bg-white px-6 py-16 text-[#242E49] md:px-16"
+    >
+      <div class="mb-6 md:mb-12">
+        <h3
+          class="mb-3 text-left text-sm font-medium text-[#242E49] md:text-base"
+        >
+          Discover Our Catalogs
+        </h3>
+        <p
+          class="text-2xl leading-tight font-semibold text-[#242E49] sm:text-3xl md:text-4xl lg:text-5xl"
+        >
+          Explore Premium Fish with Proven Reliability
+        </p>
+      </div>
+
+      <!-- Filter Pills Section -->
+      <div class="mb-6 flex flex-wrap items-center gap-3 md:mb-12">
+        <!-- Selected Pill -->
+        <a
+          href="/snapper.html"
+          class="flex items-center gap-2 rounded-full bg-[#242E49] px-3 py-2 transition hover:bg-[#1b2238]"
+        >
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-white"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+              alt="Snapper"
+              class="h-6 w-6 object-contain"
+            />
+          </div>
+          <span class="text-base leading-relaxed text-white">Snapper</span>
+        </a>
+
+        <!-- Unselected Pill -->
+        <a
+          href="/grouper.html"
+          class="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-gray-300 transition hover:border-gray-300 hover:text-gray-400"
+        >
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-transparent"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+              alt="Grouper"
+              class="h-6 w-6 object-contain"
+            />
+          </div>
+          <span class="text-base leading-relaxed">Grouper</span>
+        </a>
+
+        <!-- Unselected Pill -->
+        <a
+          href="/goldband-snapper.html"
+          class="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-gray-300 transition hover:border-gray-300 hover:text-gray-400"
+        >
+          <div
+            class="flex h-8 w-8 items-center justify-center rounded-full bg-transparent"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+              alt="Goldband Snapper"
+              class="h-6 w-6 object-contain"
+            />
+          </div>
+          <span class="text-base leading-relaxed">Goldband Snapper</span>
+        </a>
+      </div>
+
+      <!-- GRID: 2 columns × 2 rows -->
+      <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:grid-rows-2">
+        <!-- LEFT: Tall card spanning 2 rows -->
+        <div
+          class="relative flex flex-col justify-between rounded-2xl bg-cover bg-center p-4 lg:row-span-2"
+          style="background-image: url('https://picsum.photos/800/600')"
+        >
+          <!-- Fish Image on top -->
+          <div class="mt-6 flex justify-center">
+            <img
+              src="https://pics.clipartpng.com/Clownfish_Fish_PNG_Clip_Art-3024.png"
+              alt="Whole Fish"
+              class="max-h-64 w-auto object-contain"
+            />
+          </div>
+
+          <!-- Description card at the bottom -->
+          <div class="mt-6 rounded-xl border border-gray-200 bg-white p-4">
+            <h3 class="mb-2 text-lg font-semibold text-[#242E49]">Whole</h3>
+            <p class="text-base leading-relaxed text-gray-500">
+              Snapper is a premium ocean-caught fish prized for its firm,
+              succulent white flesh and naturally sweet flavor. Perfect for
+              grilling, steaming, or frying — a chef’s favorite for creating
+              elegant, restaurant-quality dishes at home.
+            </p>
+          </div>
+        </div>
+
+        <!-- RIGHT TOP CARD -->
+        <div
+          class="relative flex flex-col justify-end rounded-2xl bg-cover bg-center p-4"
+          style="background-image: url('https://picsum.photos/800/600?1')"
+        >
+          <div class="mt-6 rounded-xl border border-gray-200 bg-white p-4">
+            <h3 class="mb-2 text-lg font-semibold text-[#242E49]">Size</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
+                >0,5 / 1 kg</span
+              >
+              <span
+                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
+                >1 / 2 kg</span
+              >
+              <span
+                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
+                >2 / 15 kg</span
+              >
+              <span
+                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
+                >15 kg UP</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT BOTTOM CARD -->
+        <div
+          class="relative flex flex-col justify-end rounded-2xl bg-cover bg-center p-4"
+          style="background-image: url('https://picsum.photos/800/600?2')"
+        >
+          <div class="mt-6 rounded-xl border border-gray-200 bg-white p-4">
+            <h3 class="mb-2 text-lg font-semibold text-[#242E49]">Delivery</h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="flex items-center gap-1 rounded-lg bg-red-50 px-3 py-1 text-base text-red-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
+                  ></path>
+                </svg>
+                Fresh
+              </span>
+              <span
+                class="flex items-center gap-1 rounded-lg bg-blue-50 px-3 py-1 text-base text-blue-600"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
+                  ></path>
+                </svg>
+                Frozen
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="mt-auto w-full bg-[#262E49] px-6 py-4 text-left text-white md:px-16"
+    >
+      <p class="text-sm">&copy; 2025 Jangkar Emas. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
