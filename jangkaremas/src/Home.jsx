@@ -667,7 +667,7 @@ function Home() {
                 />
               </div>
 
-              <p className="text-sm text-[#242E49]">
+              <p className="text-sm text-[#242E49] flex flex-wrap gap-x-1">
                 sound on
                 <a
                   title="supplier"
