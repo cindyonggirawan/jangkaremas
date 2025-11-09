@@ -3,8 +3,29 @@ import whatWeDo from "/whatwedo.svg";
 import whatWeDo1 from "/whatwedo1.jpg";
 import whatWeDo2 from "/whatwedo2.jpg";
 import whatWeDo3 from "/whatwedo3.jpg";
+import { useState, useEffect } from "react";
 
 function Home() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Prevent scroll when menu is open
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isMenuOpen]);
+
+  // Close on ESC key
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
   return (
     <>
       {/* Hero Section */}
@@ -27,6 +48,8 @@ function Home() {
           <h1 className="text-lg font-medium tracking-wide text-white">
             Jangkar Emas
           </h1>
+
+          {/* Desktop Menu */}
           <nav className="hidden space-x-10 text-sm md:flex">
             <a href="/jangkaremas/index.html" className="hover:text-[#1b2238]">
               Home
@@ -44,8 +67,13 @@ function Home() {
               Contact
             </a>
           </nav>
+
+          {/* Hamburger Button */}
           <div className="md:hidden">
-            <button className="text-white focus:outline-none">
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="text-white focus:outline-none"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -63,6 +91,59 @@ function Home() {
             </button>
           </div>
         </header>
+
+        {/* Mobile Menu Overlay */}
+        <div
+          className={`fixed inset-0 z-20 flex flex-col items-center justify-center space-y-10 bg-black/50 backdrop-blur-md text-lg text-white transition-all duration-500 ease-out transform ${
+            isMenuOpen
+              ? "translate-y-0 opacity-100"
+              : "translate-y-full opacity-0 pointer-events-none"
+          }`}
+          onClick={(e) => e.target === e.currentTarget && setIsMenuOpen(false)} // close on backdrop click
+        >
+          <a
+            href="/jangkaremas/index.html"
+            className="hover:text-[#1b2238]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Home
+          </a>
+          <a
+            href="/jangkaremas/catalog.html"
+            className="hover:text-[#1b2238]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Catalog
+          </a>
+          <a
+            href="/jangkaremas/index.html#contactus"
+            className="hover:text-[#1b2238]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Contact
+          </a>
+
+          {/* Close Button */}
+          <button
+            onClick={() => setIsMenuOpen(false)}
+            className="text-white focus:outline-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex max-w-5xl flex-1 flex-col justify-center px-6 md:px-16">
