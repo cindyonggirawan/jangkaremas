@@ -195,7 +195,8 @@
         class="mb-6 flex flex-wrap items-center gap-3 md:mb-12"
       >
         <a
-          href="/jangkaremas/snapper.html"
+          href="#"
+          data-fish="snapper"
           class="pill active flex items-center gap-2 rounded-full border border-transparent bg-[#242E49] px-3 py-2 text-white transition hover:bg-[#1b2238]"
         >
           <div
@@ -203,7 +204,7 @@
           >
             <img
               src="./jangkaremas/public/catalogsnapper.jpg"
-              alt="catalogsnapper"
+              alt="Snapper"
               class="h-6 w-6 object-contain"
             />
           </div>
@@ -211,7 +212,8 @@
         </a>
 
         <a
-          href="/jangkaremas/grouper.html"
+          href="#"
+          data-fish="grouper"
           class="pill flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-gray-300 transition hover:border-gray-300 hover:text-gray-400"
         >
           <div
@@ -219,7 +221,7 @@
           >
             <img
               src="./jangkaremas/public/cataloggrouper.jpg"
-              alt="cataloggrouper"
+              alt="Grouper"
               class="h-6 w-6 object-contain"
             />
           </div>
@@ -227,7 +229,8 @@
         </a>
 
         <a
-          href="/jangkaremas/goldband-snapper.html"
+          href="#"
+          data-fish="goldband"
           class="pill flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-gray-300 transition hover:border-gray-300 hover:text-gray-400"
         >
           <div
@@ -235,7 +238,7 @@
           >
             <img
               src="./jangkaremas/public/cataloggoldbandsnapper.jpg"
-              alt="cataloggoldbandsnapper"
+              alt="Goldband Snapper"
               class="h-6 w-6 object-contain"
             />
           </div>
@@ -243,26 +246,33 @@
         </a>
       </div>
 
-      <!-- GRID: 2 columns × 2 rows -->
+      <!-- Cards -->
       <div class="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:grid-rows-2">
-        <!-- LEFT: Tall card spanning 2 rows -->
+        <!-- LEFT (Main Card) -->
         <div
+          id="main-card"
           class="relative flex flex-col justify-between rounded-2xl bg-cover bg-center p-4 lg:row-span-2"
-          style="background-image: url('./jangkaremas/public/catalogcard.jpg')"
+          style="
+            background-image: url('./jangkaremas/public/catalogmainbg.jpg');
+          "
         >
-          <!-- Fish Image on top -->
           <div class="mt-6 flex justify-center">
             <img
+              id="main-img"
               src="./jangkaremas/public/catalogsnapper.jpg"
               alt="Whole Fish"
               class="max-h-64 w-auto object-contain"
             />
           </div>
 
-          <!-- Description card at the bottom -->
           <div class="mt-6 rounded-xl border border-gray-200 bg-white p-4">
-            <h3 class="mb-2 text-lg font-semibold text-[#242E49]">Whole</h3>
-            <p class="text-base leading-relaxed text-gray-500">
+            <h3
+              id="main-title"
+              class="mb-2 text-lg font-semibold text-[#242E49]"
+            >
+              Whole
+            </h3>
+            <p id="main-desc" class="text-base leading-relaxed text-gray-500">
               Snapper is a premium ocean-caught fish prized for its firm,
               succulent white flesh and naturally sweet flavor. Perfect for
               grilling, steaming, or frying — a chef’s favorite for creating
@@ -271,8 +281,9 @@
           </div>
         </div>
 
-        <!-- RIGHT TOP CARD -->
+        <!-- RIGHT TOP (Size Card) -->
         <div
+          id="size-card"
           class="relative flex flex-col justify-end rounded-2xl bg-cover bg-center p-4"
           style="
             background-image: url('./jangkaremas/public/catalogsnapper1.jpg');
@@ -280,29 +291,13 @@
         >
           <div class="mt-6 rounded-xl border border-gray-200 bg-white p-4">
             <h3 class="mb-2 text-lg font-semibold text-[#242E49]">Size</h3>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
-                >0,5 / 1 kg</span
-              >
-              <span
-                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
-                >1 / 2 kg</span
-              >
-              <span
-                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
-                >2 / 15 kg</span
-              >
-              <span
-                class="rounded-lg bg-gray-100 px-3 py-1 text-base text-gray-500"
-                >15 kg UP</span
-              >
-            </div>
+            <div id="size-list" class="flex flex-wrap gap-2"></div>
           </div>
         </div>
 
-        <!-- RIGHT BOTTOM CARD -->
+        <!-- RIGHT BOTTOM (Delivery Card) -->
         <div
+          id="delivery-card"
           class="relative flex flex-col justify-end rounded-2xl bg-cover bg-center p-4"
           style="
             background-image: url('./jangkaremas/public/catalogsnapper2.jpg');
@@ -310,46 +305,7 @@
         >
           <div class="mt-6 rounded-xl border border-gray-200 bg-white p-4">
             <h3 class="mb-2 text-lg font-semibold text-[#242E49]">Delivery</h3>
-            <div class="flex flex-wrap gap-2">
-              <span
-                class="flex items-center gap-1 rounded-lg bg-red-50 px-3 py-1 text-base text-red-600"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                  ></path>
-                </svg>
-                Fresh
-              </span>
-              <span
-                class="flex items-center gap-1 rounded-lg bg-blue-50 px-3 py-1 text-base text-blue-600"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-4 w-4"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                  ></path>
-                </svg>
-                Frozen
-              </span>
-            </div>
+            <div id="delivery-list" class="flex flex-wrap gap-2"></div>
           </div>
         </div>
       </div>
