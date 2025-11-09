@@ -40,3 +40,32 @@ document.addEventListener("keydown", (e) => {
     closeMenu();
   }
 });
+
+const pills = document.querySelectorAll("#filter-pills .pill");
+
+pills.forEach((pill) => {
+  pill.addEventListener("click", (e) => {
+    // Prevent page reload if you want the highlight to stay on the same page
+    e.preventDefault();
+
+    // Remove active styles from all pills
+    pills.forEach((p) => {
+      p.classList.remove(
+        "active",
+        "border-transparent",
+        "bg-[#242E49]",
+        "text-white"
+      );
+      p.classList.add("border-gray-200", "text-gray-300");
+    });
+
+    // Add active styles to the clicked pill
+    pill.classList.add(
+      "active",
+      "border-transparent",
+      "bg-[#242E49]",
+      "text-white"
+    );
+    pill.classList.remove("border-gray-200", "text-gray-300");
+  });
+});
