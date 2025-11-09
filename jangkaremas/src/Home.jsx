@@ -880,7 +880,7 @@ function Home() {
 
             <h3 className="mb-2 text-lg font-semibold text-[#242E49]">Phone</h3>
             <p className="text-sm leading-relaxed text-blue-600">
-              +62 123-456-7890
+              +62 812-4104-3048
             </p>
           </div>
 
@@ -898,7 +898,7 @@ function Home() {
               Whatsapp
             </h3>
             <p className="text-sm leading-relaxed text-blue-600">
-              +62 123-456-7890
+              +62 812-4104-3048
             </p>
           </div>
 
@@ -914,7 +914,7 @@ function Home() {
 
             <h3 className="mb-2 text-lg font-semibold text-[#242E49]">Email</h3>
             <p className="text-sm leading-relaxed text-blue-600">
-              jangkaremas@mail.id
+              emasjangkarid@gmail.com
             </p>
           </div>
 
