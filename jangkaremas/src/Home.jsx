@@ -1,4 +1,8 @@
 import hero from "/hero.mov";
+import whatWeDo from "/whatwedo.svg";
+import whatWeDo1 from "/whatwedo1.jpg";
+import whatWeDo2 from "/whatwedo2.jpg";
+import whatWeDo3 from "/whatwedo3.jpg";
 
 function Home() {
   return (
@@ -153,20 +157,11 @@ function Home() {
 
           {/* Right Info Group */}
           <div className="hidden max-w-xs flex-col items-center text-center md:flex md:items-end md:text-right">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
+            <img
+              src={whatWeDo}
+              alt="whatwedo"
               className="mb-3 h-8 w-8 text-gray-500"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-              />
-            </svg>
+            />
             <p className="text-sm leading-relaxed text-gray-500">
               Jangkar Emas has been delivering
               <br />
@@ -183,10 +178,7 @@ function Home() {
           {/* Card 1 (image only + title below) */}
           <div>
             <div className="overflow-hidden rounded-xl">
-              <img
-                src="https://picsum.photos/800/600"
-                className="block h-64 w-full object-cover"
-              />
+              <img src={whatWeDo1} className="block h-64 w-full object-cover" />
             </div>
             <h4 className="mt-4 text-xl font-semibold text-[#242E49] md:text-2xl">
               🐟 Catching the Best from Indonesia’s Waters
@@ -199,10 +191,7 @@ function Home() {
           {/* Card 2 */}
           <div>
             <div className="overflow-hidden rounded-xl">
-              <img
-                src="https://picsum.photos/800/600?1"
-                className="block h-64 w-full object-cover"
-              />
+              <img src={whatWeDo2} className="block h-64 w-full object-cover" />
             </div>
             <h4 className="mt-4 text-xl font-semibold text-[#242E49] md:text-2xl">
               ✈️ Delivering with Trusted Logistics Providers
@@ -215,10 +204,7 @@ function Home() {
           {/* Card 3 */}
           <div>
             <div className="overflow-hidden rounded-xl">
-              <img
-                src="https://picsum.photos/800/600?2"
-                className="block h-64 w-full object-cover"
-              />
+              <img src={whatWeDo3} className="block h-64 w-full object-cover" />
             </div>
             <h4 className="mt-4 text-xl font-semibold text-[#242E49] md:text-2xl">
               🌿 Empowering Coastal & Local Fishing Communities
