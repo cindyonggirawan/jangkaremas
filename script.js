@@ -133,9 +133,16 @@ pills.forEach((pill) => {
         "active",
         "border-transparent",
         "bg-[#242E49]",
-        "text-white"
+        "text-white",
+        "hover:bg-[#1b2238]"
       );
-      p.classList.add("border-gray-200", "text-gray-300");
+      p.classList.add(
+        "border-gray-200",
+        "text-gray-300",
+        "hover:border-gray-300",
+        "hover:text-gray-400"
+      );
+      p.querySelector("span").classList.remove("text-white");
     });
 
     // Add active styles to the clicked pill
@@ -143,9 +150,16 @@ pills.forEach((pill) => {
       "active",
       "border-transparent",
       "bg-[#242E49]",
-      "text-white"
+      "text-white",
+      "hover:bg-[#1b2238]"
     );
-    pill.classList.remove("border-gray-200", "text-gray-300");
+    pill.classList.remove(
+      "border-gray-200",
+      "text-gray-300",
+      "hover:border-gray-300",
+      "hover:text-gray-400"
+    );
+    pill.querySelector("span").classList.add("text-white");
 
     // 🔹 Update content
     updateFishContent(selected);
