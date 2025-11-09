@@ -32,6 +32,7 @@
         <h1 class="text-lg font-medium tracking-wide text-white">
           Jangkar Emas
         </h1>
+
         <nav class="hidden space-x-10 text-sm md:flex">
           <a href="/jangkaremas/index.html" class="hover:text-[#1b2238]"
             >Home</a
@@ -45,8 +46,9 @@
             >Contact</a
           >
         </nav>
+
         <div class="md:hidden">
-          <button class="text-white focus:outline-none">
+          <button id="menu-btn" class="text-white focus:outline-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -64,6 +66,36 @@
           </button>
         </div>
       </header>
+
+      <!-- Mobile menu overlay -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-0 z-20 hidden flex flex-col items-center justify-center space-y-10 bg-black/50 backdrop-blur-md text-lg text-white"
+      >
+        <a href="/jangkaremas/index.html" class="hover:text-[#1b2238]">Home</a>
+        <a href="/jangkaremas/catalog.html" class="hover:text-[#1b2238]"
+          >Catalog</a
+        >
+        <a href="/jangkaremas/index.html#contactus" class="hover:text-[#1b2238]"
+          >Contact</a
+        >
+        <button id="close-btn" class="text-white focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
 
       <!-- Hero Content -->
       <div
@@ -983,5 +1015,7 @@
     >
       <p class="text-sm">&copy; 2025 Jangkar Emas. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
