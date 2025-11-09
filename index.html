@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/jangkaremas/public/icon.jpeg" />
     <title>Jangkar Emas</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="font-sans text-[#242E49]">
     <!-- Hero Section -->
     <section
-      class="relative flex min-h-screen flex-col justify-between bg-cover bg-center text-white"
-      style="
-        background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
-      "
+      class="relative flex min-h-screen flex-col justify-between text-white overflow-hidden"
     >
+      <!-- Background Video -->
+      <video
+        class="absolute inset-0 w-full h-full object-cover"
+        src="/jangkaremas/public/hero.mov"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+
       <!-- Overlay -->
       <div class="absolute inset-0 bg-black/50"></div>
 

@@ -1,14 +1,20 @@
+import hero from "/hero.mov";
+
 function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section
-        className="relative flex min-h-screen flex-col justify-between bg-cover bg-center text-white"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')",
-        }}
-      >
+      <section className="relative flex min-h-screen flex-col justify-between text-white overflow-hidden">
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={hero}
+          autoPlay
+          muted
+          loop
+          playsInline
+        ></video>
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
 
@@ -942,9 +948,9 @@ function Home() {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.910695139303!2d-74.01027892401362!3d40.72009667139315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598e03853d0d%3A0x5a8f5790707e0bdb!2sSoHo%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sid!4v1728640000000!5m2!1sen!2sid"
           className="h-full w-full border-0"
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
 
