@@ -3,6 +3,15 @@ import whatWeDo from "/whatwedo.svg";
 import whatWeDo1 from "/whatwedo1.jpg";
 import whatWeDo2 from "/whatwedo2.jpg";
 import whatWeDo3 from "/whatwedo3.jpg";
+import ourValues1 from "/ourvalues1.svg";
+import ourValues2 from "/ourvalues2.svg";
+import ourValues3 from "/ourvalues3.svg";
+import ourValues4 from "/ourvalues4.svg";
+import contactUs1 from "/contactus1.svg";
+import contactUs2 from "/contactus2.svg";
+import contactUs3 from "/contactus3.svg";
+import contactUs4 from "/contactus4.svg";
+import profile from "/icon.jpeg";
 import { useState, useEffect } from "react";
 
 function Home() {
@@ -548,21 +557,11 @@ function Home() {
               {/* Item 1 */}
               <div>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
+                  <img
+                    src={ourValues1}
+                    alt="ourvalues1"
                     className="h-6 w-6 text-blue-600"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                    />
-                  </svg>
+                  />
                 </div>
                 <p className="mb-2 text-lg font-semibold text-[#242E49]">
                   Transparency
@@ -576,21 +575,11 @@ function Home() {
               {/* Item 2 */}
               <div>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
+                  <img
+                    src={ourValues2}
+                    alt="ourvalues2"
                     className="h-6 w-6 text-blue-600"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                    />
-                  </svg>
+                  />
                 </div>
                 <p className="mb-2 text-lg font-semibold text-[#242E49]">
                   Efficiency
@@ -604,21 +593,11 @@ function Home() {
               {/* Item 3 */}
               <div>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
+                  <img
+                    src={ourValues3}
+                    alt="ourvalues3"
                     className="h-6 w-6 text-blue-600"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                    />
-                  </svg>
+                  />
                 </div>
                 <p className="mb-2 text-lg font-semibold text-[#242E49]">
                   Respect
@@ -632,21 +611,11 @@ function Home() {
               {/* Item 4 */}
               <div>
                 <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
+                  <img
+                    src={ourValues4}
+                    alt="ourvalues4"
                     className="h-6 w-6 text-blue-600"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                    />
-                  </svg>
+                  />
                 </div>
                 <p className="mb-2 text-lg font-semibold text-[#242E49]">
                   Passion
@@ -717,8 +686,8 @@ function Home() {
             <div className="flex flex-col p-3 gap-3 rounded-t-[0.5rem] border border-gray-200 border-b-0">
               <div className="flex items-center gap-3">
                 <img
-                  src="https://picsum.photos/800/605"
-                  alt="Profile picture"
+                  src={profile}
+                  alt="profile"
                   className="w-10 h-10 rounded-full"
                 />
                 <div className="flex flex-col">
@@ -901,24 +870,12 @@ function Home() {
         <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
           {/* Card 1 */}
           <div className="flex flex-col items-start rounded-2xl border border-gray-200 bg-white p-6">
-            {/* Icon square: white bg + border */}
             <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white">
-              {/* SVG stroke uses currentColor; class sets it blue */}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-blue-600"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                />
-              </svg>
+              <img
+                src={contactUs1}
+                alt="contactus1"
+                className="h-6 w-6 text-[#242E49]"
+              />
             </div>
 
             <h3 className="mb-2 text-lg font-semibold text-[#242E49]">Phone</h3>
@@ -930,21 +887,11 @@ function Home() {
           {/* Card 2 */}
           <div className="flex flex-col items-start rounded-2xl border border-gray-200 bg-white p-6">
             <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-blue-600"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                />
-              </svg>
+              <img
+                src={contactUs2}
+                alt="contactus2"
+                className="h-6 w-6 text-[#242E49]"
+              />
             </div>
 
             <h3 className="mb-2 text-lg font-semibold text-[#242E49]">
@@ -958,21 +905,11 @@ function Home() {
           {/* Card 3 */}
           <div className="flex flex-col items-start rounded-2xl border border-gray-200 bg-white p-6">
             <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-blue-600"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                />
-              </svg>
+              <img
+                src={contactUs3}
+                alt="contactus3"
+                className="h-6 w-6 text-[#242E49]"
+              />
             </div>
 
             <h3 className="mb-2 text-lg font-semibold text-[#242E49]">Email</h3>
@@ -984,21 +921,11 @@ function Home() {
           {/* Card 4 */}
           <div className="flex flex-col items-start rounded-2xl border border-gray-200 bg-white p-6">
             <div className="mb-2 flex h-12 w-12 items-center justify-center rounded-lg border border-gray-200 bg-white">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6 text-blue-600"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12m-19.5 0l8.954 8.955c.44.439 1.152.439 1.591 0L21.75 12m-19.5 0h19.5"
-                />
-              </svg>
+              <img
+                src={contactUs4}
+                alt="contactus4"
+                className="h-6 w-6 text-[#242E49]"
+              />
             </div>
 
             <h3 className="mb-2 text-lg font-semibold text-[#242E49]">
