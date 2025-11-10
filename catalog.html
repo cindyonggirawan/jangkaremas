@@ -6,6 +6,7 @@
     <link rel="icon" href="./jangkaremas/public/icon.jpeg" />
     <title>Jangkar Emas</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="font-sans text-[#242E49]">
     <!-- Hero Section -->
@@ -89,6 +90,8 @@
 
       <!-- Hero Content -->
       <div
+        data-aos="zoom-in-down"
+        data-aos-duration="3000"
         class="relative z-10 flex flex-col justify-center px-6 text-center md:px-16"
       >
         <h1
@@ -173,6 +176,8 @@
 
     <!-- DISCOVER OUR CATALOGS -->
     <section
+      data-aos="flip-down"
+      data-aos-duration="3000"
       id="discoverourcatalogs"
       class="bg-white px-6 py-16 text-[#242E49] md:px-16"
     >
@@ -317,6 +322,10 @@
       <p class="text-sm">&copy; 2025 Jangkar Emas. All rights reserved.</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
